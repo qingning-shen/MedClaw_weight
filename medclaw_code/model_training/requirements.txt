@@ -1,0 +1,21 @@
+# Model training dependencies
+# Install on the cloud GPU instance (not needed on local machine)
+
+# ms-swift: unified SFT + GRPO training framework
+ms-swift>=3.0.0
+
+# Core ML stack (versions tested on CUDA 12.1 + T4)
+torch>=2.3.0
+transformers>=4.47.0
+peft>=0.14.0
+accelerate>=0.34.0
+datasets>=2.20.0
+tokenizers>=0.20.0
+
+# For GRPO / RL
+trl>=0.11.0
+
+# Utilities
+sentencepiece>=0.2.0
+protobuf>=3.20.0
+numpy>=1.26.0
